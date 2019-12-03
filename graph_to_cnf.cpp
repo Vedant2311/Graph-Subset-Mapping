@@ -1,4 +1,3 @@
-// author : rush_29
 // complexity : O(Em + Ep + Vp + Vm + Vm*Vp + Ve + Em*Vp*Vp + Vp*Vp*Vm + Vm*Vm*Vp) = O(Vp*Vp*(Vm + Em))
 #include <iostream>
 #include <fstream>
