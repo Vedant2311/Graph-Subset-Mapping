@@ -1,4 +1,3 @@
-// Author : rush_29
 // complexity : O(VeVp)
 #include <iostream>
 #include <fstream>
