@@ -43,3 +43,8 @@ graph G’ to which it is mapped. The output of the same problem is
     
 If the problem is unsatisfiable output a 0
 
+## Implementation
+
+**graph_to_cnf.cpp** takes the graph as the input and obtains the CNF clauses to be passed to the MiniSAT program. It first of all, stores the given graphs in the form of adjacency list. Then, a SATmatrix was defined for mapping the jth mail-user to the ith phone-user. Then, the unary clauses, row clauses, edge consistency clauses, one-per-row and one-per-column clauses etc are obtained and stored in a SAT input file, which is to be used by the MiniSAT. The number of clauses was kept more, while the size of each clause is less for reducing the computational speed. 
+
+Then this file is passed to the SAT solver and it outputs a solved file. And then it is passed to the **sol_to_mapping.cpp** to obtain the final mapping. 
